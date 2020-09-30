@@ -35,7 +35,7 @@ class mycalc extends Frame implements ActionListener
         if(S.equals("+") || S.equals("-") || S.equals("*") || S.equals("/"))
         {
             S1 = S;
-            i = Float.parseFloat(T.getText());
+            i = Integer.parseInt(T.getText());
             T.setText("");
             count = 1;
         }
@@ -43,7 +43,7 @@ class mycalc extends Frame implements ActionListener
         {
             if(S.equals("="))
             {
-                j = Float.parseFloat(T.getText());
+                j = Integer.parseInt(T.getText());
                 if(S1.equals("+"))
                     k = i + j;
                 else
@@ -90,4 +90,3 @@ class calculator
         c.setVisible(true);
     }
 }
-
